@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "letsvinocryptids:appalachian_map_piece"
+    },
+    "B": {
+      "item": "letsvinocryptids:tales_of_folklore"
+    }
+  },
+  "result": {
+    "item": "letsvinocryptids:appalachian_forest_map",
+    "count": 1
+  }
+}

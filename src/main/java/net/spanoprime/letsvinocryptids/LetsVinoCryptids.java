@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.spanoprime.letsvinocryptids.block.ModBlocks;
 import net.spanoprime.letsvinocryptids.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,6 +32,7 @@ public class LetsVinoCryptids
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -55,6 +57,15 @@ public class LetsVinoCryptids
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
         {
             event.accept(ModItems.APPALACHIAN_MAP_PIECE);
+            event.accept(ModItems.SPIRITS_MAP_PIECE);
+            event.accept(ModItems.APPALACHIAN_FOREST_MAP);
+            event.accept(ModItems.SPIRITS_FOREST_MAP);
+            event.accept(ModItems.TALES_OF_FOLKLORE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.VIRGINIA_PINE_PLANKS);
         }
     }
 

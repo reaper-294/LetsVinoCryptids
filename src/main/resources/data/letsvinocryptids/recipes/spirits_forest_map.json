@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "letsvinocryptids:spirits_map_piece"
+    },
+    "B": {
+      "item": "letsvinocryptids:tales_of_folklore"
+    }
+  },
+  "result": {
+    "item": "letsvinocryptids:spirits_forest_map",
+    "count": 1
+  }
+}
